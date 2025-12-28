@@ -1,6 +1,6 @@
-# semanticHTML
+# Semantic HTML basics
 
-Semantic Structure - tags:  \
+Semantic Structure:  \
 	•	header: introductory information  \
 	•	nav: nav links  \
 	•	main: main content or body. only one main per page  \
@@ -9,7 +9,7 @@ Semantic Structure - tags:  \
 	•	aside: less important content. sidebars, or nonessential info, ads  \
 	•	footer: footer. contact info, copyright, navs, etc.  \
   \
-Semantic Text - tags: \
+Semantic Text: \
 	•	H1,h2,h3,h4,h5,h6: headings. H1 is top-level. Usually only 1 h1 per page \
 	•	p: standalone paragraph \
 	•	a: hyperlink \

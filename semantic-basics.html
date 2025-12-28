@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The MDN Linked Semantic Map</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        line-height: 1.6;
+        margin: 2rem;
+        color: #333;
+      }
+      header,
+      nav,
+      main,
+      section,
+      article,
+      aside,
+      footer,
+      search,
+      details,
+      fieldset {
+        border: 2px solid #444;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+      /* Visual labels to help identify the containers */
+      header::before {
+        content: "<header>";
+        color: blue;
+        font-weight: bold;
+      }
+      nav::before {
+        content: "<nav>";
+        color: blue;
+        font-weight: bold;
+      }
+      main::before {
+        content: "<main>";
+        color: blue;
+        font-weight: bold;
+      }
+      section::before {
+        content: "<section>";
+        color: blue;
+        font-weight: bold;
+      }
+      article::before {
+        content: "<article>";
+        color: blue;
+        font-weight: bold;
+      }
+      aside::before {
+        content: "<aside>";
+        color: blue;
+        font-weight: bold;
+      }
+      footer::before {
+        content: "<footer>";
+        color: blue;
+        font-weight: bold;
+      }
+
+      /* Link styling */
+      a.tag-link {
+        color: #0056b3;
+        font-family: monospace;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      a.tag-link:hover {
+        text-decoration: underline;
+        color: #d73a49;
+      }
+
+      code {
+        background: #eee;
+        padding: 2px 5px;
+        border-radius: 3px;
+        font-family: monospace;
+      }
+      mark {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        This is an
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"
+          class="tag-link"
+          >H1</a
+        >
+        inside a Header
+      </h1>
+      <p>
+        The
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header" class="tag-link"
+          >&lt;header&gt;</a
+        >
+        contains introductory content or branding.
+      </p>
+
+      <nav>
+        <p>
+          This is a
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" class="tag-link"
+            >&lt;nav&gt;</a
+          >
+          element, used for navigation links.
+        </p>
+        <menu>
+          <li>
+            This is an
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li" class="tag-link"
+              >&lt;li&gt;</a
+            >
+            inside a
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu"
+              class="tag-link"
+              >&lt;menu&gt;</a
+            >
+            (a list of commands).
+          </li>
+          <li><a href="#" class="tag-link">This is an &lt;a&gt; (hyperlink).</a></li>
+        </menu>
+      </nav>
+    </header>
+
+    <hr />
+    <p>
+      Above is an
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr" class="tag-link"
+        >&lt;hr&gt;</a
+      >
+      (thematic break).
+    </p>
+
+    <main>
+      <p>
+        This is the
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main" class="tag-link"
+          >&lt;main&gt;</a
+        >
+        tag. It holds the unique, primary content.
+      </p>
+
+      <section>
+        <h2>
+          This is an
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"
+            class="tag-link"
+            >H2</a
+          >
+          inside a Section
+        </h2>
+        <p>
+          A
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section"
+            class="tag-link"
+            >&lt;section&gt;</a
+          >
+          groups related content together by a theme.
+        </p>
+
+        <article>
+          <h3>
+            This is an
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"
+              class="tag-link"
+              >H3</a
+            >
+            inside an Article
+          </h3>
+          <p>
+            An
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article"
+              class="tag-link"
+              >&lt;article&gt;</a
+            >
+            is a self-contained item that can stand alone.
+          </p>
+
+          <p>
+            <em
+              >Here is
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em"
+                class="tag-link"
+                >&lt;em&gt;</a
+              >
+              (emphasis)</em
+            >
+            and
+            <strong>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong"
+                class="tag-link"
+                >&lt;strong&gt;</a
+              >
+              (importance).</strong
+            >
+          </p>
+
+          <p>
+            A short inline quote (<a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q"
+              class="tag-link"
+              >&lt;q&gt;</a
+            >) looks like this:
+
+            <q>This is a q tag.</q>
+          </p>
+
+          <blockquote cite="https://developer.mozilla.org">
+            This is a
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote"
+              class="tag-link"
+              >&lt;blockquote&gt;</a
+            >. It is used for long, multiline quotations.
+            <cite
+              >— This is a
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite"
+                class="tag-link"
+                >&lt;cite&gt;</a
+              >
+              tag identifying the source.</cite
+            >
+          </blockquote>
+
+          <figure>
+            <code>&lt;figure&gt; content here</code>
+            <figcaption>
+              This is a
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption"
+                class="tag-link"
+                >&lt;figcaption&gt;</a
+              >
+              describing the
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure"
+                class="tag-link"
+                >&lt;figure&gt;</a
+              >.
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <section>
+        <h4>
+          This is an
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"
+            class="tag-link"
+            >H4</a
+          >
+          inside a Section
+        </h4>
+
+        <p>
+          This is the
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr" class="tag-link"
+            >&lt;abbr&gt;</a
+          >
+          tag: <abbr title="Hypertext Markup Language">HTML</abbr>. Hovering over will reveal the
+          unabbreviated text.
+        </p>
+        <p>
+          This is the
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark" class="tag-link"
+            >&lt;mark&gt;</a
+          >
+          tag: <mark>Highlighted text</mark>.
+        </p>
+        <p>
+          This is the
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small" class="tag-link"
+            >&lt;small&gt;</a
+          >
+          tag: <small>Small text for fine print.</small>
+        </p>
+        <p>
+          This is the
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code" class="tag-link"
+            >&lt;code&gt;</a
+          >
+          tag: <code>console.log()</code>.
+        </p>
+        <p>
+          Math tags: 10<sup style="color: red"
+            ><a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup"
+              class="tag-link"
+              >sup</a
+            ></sup
+          >
+          and H<sub style="color: red"
+            ><a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub"
+              class="tag-link"
+              >sub</a
+            ></sub
+          >2O.
+        </p>
+
+        <ul>
+          <li>
+            An
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li" class="tag-link"
+              >&lt;li&gt;</a
+            >
+            in a
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" class="tag-link"
+              >&lt;ul&gt;</a
+            >
+            (unordered).
+          </li>
+        </ul>
+        <ol>
+          <li>
+            An
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li" class="tag-link"
+              >&lt;li&gt;</a
+            >
+            in an
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol" class="tag-link"
+              >&lt;ol&gt;</a
+            >
+            (ordered).
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h5>
+          This is an
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"
+            class="tag-link"
+            >H5</a
+          >
+          inside a Section
+        </h5>
+        <search>
+          <p>
+            This wrapper is a
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/search"
+              class="tag-link"
+              >&lt;search&gt;</a
+            >
+            element. The search element represents the parts of the document or application with
+            form controls or other content related to performing a search or filtering operation.
+          </p>
+          <form
+            oninput="out.value=parseInt(range.value)"
+            style="padding: 4px; border: 3px solid orangered; border-radius: 4px">
+            <p>
+              This area within the orangered border is a form. The
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form"
+                class="tag-link"
+                >&lt;form&gt;</a
+              >
+              handles user input.
+            </p>
+
+            <fieldset>
+              <legend>
+                This is a
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend"
+                  class="tag-link"
+                  >&lt;legend&gt;</a
+                >
+                for the following information in a
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset"
+                  class="tag-link"
+                  >&lt;fieldset&gt;</a
+                >
+              </legend>
+
+              <label
+                >Task
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress"
+                  class="tag-link"
+                  >&lt;progress&gt;</a
+                >:</label
+              >
+              <progress value="60" max="100"></progress>
+
+              <br /><br />
+
+              <select>
+                <optgroup label="An optgroup">
+                  <option>
+                    This is an
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option"
+                      class="tag-link"
+                      >&lt;option&gt;</a
+                    >
+                  </option>
+                </optgroup>
+              </select>
+              <p>
+                Group options with
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup"
+                  class="tag-link"
+                  >&lt;optgroup&gt;</a
+                >.
+              </p>
+
+              <br />
+              <label for="range">This is an input of type "range"</label><br />
+              <input type="range" id="range" value="60" />
+              <p>
+                This is an
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output"
+                  class="tag-link"
+                  >&lt;output&gt;</a
+                >
+                for the range input: <output name="out" for="range">60</output>
+              </p>
+            </fieldset>
+          </form>
+        </search>
+
+        <table style="border: 2px solid black; margin: 5px; border-collapse: collapse">
+          <caption>
+            This is a
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption"
+              class="tag-link"
+              >&lt;caption&gt;</a
+            >
+            for this table.
+          </caption>
+
+          <thead style="border: 2px solid black">
+            <tr>
+              <th style="border: 2px solid black">
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th"
+                  class="tag-link"
+                  >&lt;th&gt;</a
+                >
+                (Header)
+              </th>
+              <th style="border: 2px solid black">
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th"
+                  class="tag-link"
+                  >&lt;th&gt;</a
+                >
+                (Header)
+              </th>
+            </tr>
+          </thead>
+          <tbody style="border: 2px solid black">
+            <tr>
+              <td style="border: 2px solid black">
+                This is a cell in the first
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr"
+                  class="tag-link"
+                  >&lt;tr&gt;</a
+                >
+                (Row)
+              </td>
+              <td style="border: 2px solid black">
+                This cell uses
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data"
+                  class="tag-link"
+                  >&lt;data&gt;</a
+                >: <data value="001">Item 1</data>
+              </td>
+            </tr>
+            <tr>
+              <td style="border: 2px solid black">
+                This is another cell in a
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr"
+                  class="tag-link"
+                  >&lt;tr&gt;</a
+                >
+                (Row 2)
+              </td>
+              <td style="border: 2px solid black">
+                Machine-readable
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data"
+                  class="tag-link"
+                  >&lt;data&gt;</a
+                >:
+                <data value="002">Item 2</data>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <details>
+          <summary>
+            This is a
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary"
+              class="tag-link"
+              >&lt;summary&gt;</a
+            >
+            (Click to expand
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details"
+              class="tag-link"
+              >&lt;details&gt;</a
+            >)
+          </summary>
+          <video controls width="250">
+            <track kind="captions" src="demo.vtt" srclang="en" label="English" />
+          </video>
+          <p>
+            The video above uses a
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track"
+              class="tag-link"
+              >&lt;track&gt;</a
+            >
+            for captions.
+          </p>
+        </details>
+      </section>
+
+      <h6>
+        This is an
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"
+          class="tag-link"
+          >H6</a
+        >
+        (Lowest Heading)
+      </h6>
+
+      <dialog open>
+        This is a
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" class="tag-link"
+          >&lt;dialog&gt;</a
+        >
+        window (visible via the 'open' attribute).
+      </dialog>
+
+      <template>
+        <p>
+          This is a
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template"
+            class="tag-link"
+            >&lt;template&gt;</a
+          >
+          (hidden until used by JS).
+        </p>
+      </template>
+
+      <noscript>
+        <p>
+          This is
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript"
+            class="tag-link"
+            >&lt;noscript&gt;</a
+          >
+          (visible if JS is off).
+        </p>
+      </noscript>
+    </main>
+
+    <aside>
+      <p>
+        This is an
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside" class="tag-link"
+          >&lt;aside&gt;</a
+        >
+        for tangential content.
+      </p>
+    </aside>
+
+    <footer>
+      <p>
+        This is the
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer" class="tag-link"
+          >&lt;footer&gt;</a
+        >.
+      </p>
+      <address>
+        This is the
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address" class="tag-link"
+          >&lt;address&gt;</a
+        >
+        tag for author contact.
+      </address>
+    </footer>
+  </body>
+</html>

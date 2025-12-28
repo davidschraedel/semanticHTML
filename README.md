@@ -1,27 +1,27 @@
 # semanticHTML
 
-Semantic Structure - tags:
-	•	header: introductory information  
-	•	nav: nav links  
-	•	main: main content or body. only one main per page  
-	•	article: can stand independently of page or site. self-contained item for various contexts  
-	•	section: grouping nearby content with a theme. not self-contained but part of something  
-	•	aside: less important content. sidebars, or nonessential info, ads  
-	•	footer: footer. contact info, copyright, navs, etc.  
-  
-Semantic Text - tags:
-	•	H1,h2,h3,h4,h5,h6: headings. H1 is top-level. Usually only 1 h1 per page
-	•	p: standalone paragraph
-	•	a: hyperlink
-	•	ol: ordered list
-	•	ul: unordered list, no order
-	•	li: list
-	•	q: a short inline quotation of text
-	•	blockquote: long, multiline quotations
-	•	em: emphasis, text to be emphasized
-	•	Strong: strongly emphasized, or important text
-	•	code: block of computer code
-
+Semantic Structure - tags:  \
+	•	header: introductory information  \
+	•	nav: nav links  \
+	•	main: main content or body. only one main per page  \
+	•	article: can stand independently of page or site. self-contained item for various contexts  \
+	•	section: grouping nearby content with a theme. not self-contained but part of something  \
+	•	aside: less important content. sidebars, or nonessential info, ads  \
+	•	footer: footer. contact info, copyright, navs, etc.  \
+  \
+Semantic Text - tags: \
+	•	H1,h2,h3,h4,h5,h6: headings. H1 is top-level. Usually only 1 h1 per page \
+	•	p: standalone paragraph \
+	•	a: hyperlink \
+	•	ol: ordered list \
+	•	ul: unordered list, no order \
+	•	li: list \
+	•	q: a short inline quotation of text \
+	•	blockquote: long, multiline quotations \
+	•	em: emphasis, text to be emphasized \
+	•	Strong: strongly emphasized, or important text \
+	•	code: block of computer code \
+ \
 Others:
 	•	Abbr: abbreviation or acronym
 	•	Address: contact info for author/owner of document

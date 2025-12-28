@@ -49,6 +49,6 @@ Others: \
 	•	details: disclosure widget. Contents of summary are used as label. \
 	•	template: content to be hidden when page loads \
 	•	track: text caption tracks for video/audio \
-	•	hr: thematic break in content/topic. Often shown as horizontal line to break up page \
+	•	hr: thematic break in content/topic. Often shown as horizontal line to break up page
 
 	  
